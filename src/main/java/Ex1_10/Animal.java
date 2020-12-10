@@ -1,7 +1,6 @@
 package Ex1_10;
 
-public abstract class Animal {
-    public void makeSound() {
-
-    }
+public interface Animal {
+    String getName();
+    String makeSound();
 }

@@ -1,14 +1,20 @@
 package Ex1_10;
 
-public class Dog extends Animal implements Movable {
+public class Dog extends Vet implements Animal, Movable {
     String dogName;
 
-    public Dog(String newCatName) {
-        this.dogName = newCatName;
+    public Dog(String newDogName) {
+        this.dogName = newDogName;
     }
+
     @Override
-    public void makeSound() {
-        System.out.println("Dog name is " + this.dogName + " and it says woow!");
+    public String getName() {
+        return this.dogName;
+    }
+
+    @Override
+    public String makeSound() {
+        return "Dog name is " + this.dogName + " and it says woow!";
     }
 
     @Override

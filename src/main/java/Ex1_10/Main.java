@@ -11,20 +11,28 @@ public class Main {
         Cat[] catTable = new Cat[]{cat1, cat2, cat3};
         Animal[] animalTable = new Animal[]{cat1, cat2, cat3, dog1, dog2};
 
-        System.out.println("------------------------------");
-        for (Cat cats : catTable) {
-            cats.makeSound();
-        }
-        System.out.println("------------------------------");
-        for (Animal animal : animalTable) {
-            animal.makeSound();
-        }
-        System.out.println("------------------------------");
+//        System.out.println("------------------------------");
+//        for (Cat cats : catTable) {
+//            cats.makeSound();
+//        }
+//        System.out.println("------------------------------");
+//        for (Animal animal : animalTable) {
+//            animal.makeSound();
+//        }
+//        System.out.println("------------------------------");
 
-        cat1.eatMouse();
-        cat1.eatMouse();
-        cat1.eatMouse();
-        cat2.eatMouse();
+//        cat1.eatMouse();
+//        cat1.eatMouse();
+//        cat1.eatMouse();
+//        cat2.eatMouse();
+
+        System.out.println(Vet.sayHello(cat1));
+        System.out.println(Vet.sayHello(dog1));
+        System.out.println(Vet.sayHello(cat1));
+
+
+
+
 
     }
 }
