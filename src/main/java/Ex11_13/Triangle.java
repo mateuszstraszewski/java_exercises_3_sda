@@ -1,6 +1,6 @@
 package Ex11_13;
 
-public class Triangle {
+public class Triangle implements Area{
     private double height;
     private double base;
 
@@ -9,22 +9,29 @@ public class Triangle {
         this.base = newBase;
     }
 
-    public double getArea(Triangle triangle) {
+    @Override
+    public double getArea()
+    {
         return 0.5 * this.height * this.base;
     }
 
-    public void setBase(double base) {
+    public void setBase(double base)
+    {
         this.base = base;
     }
-    public void setHeight(double height) {
+
+    public void setHeight(double height)
+    {
         this.height = height;
     }
 
-    public double getBase() {
+    public double getBase()
+    {
         return base;
     }
 
-    public double getHeight() {
+    public double getHeight()
+    {
         return height;
     }
 }
