@@ -1,6 +1,6 @@
 package Ex11_13;
 
-public class Main implements Area {
+public class Main {
     static double finalArea = 0D;
 
     public static void main(String[] args) {
@@ -17,14 +17,15 @@ public class Main implements Area {
             finalArea += figure.getArea();
         }
         System.out.println(finalArea);
+        System.out.println(paintArea());
 
     }
 
-    @Override
-    public String paintArea() {
+    public static String paintArea() {
         double paintQuant = 19D;
-        if (paintQuant < finalArea);
+        if (paintQuant < finalArea) ;
         return "Not enough paint to cover all figures.";
     }
-
 }
+
+
